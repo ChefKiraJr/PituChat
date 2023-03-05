@@ -18,11 +18,11 @@ const LoginPage = () => {
   return (
     <div className="login-page__container">
       <div className="login-page__left-section">
-        <img src={loginImage} href="shape-image" width="100%" />
+        <img src={loginImage} alt="shape" className="login-page__image" />
       </div>
       <div className="login-page__right-section">
         <div className="login-page__form">
-          <img src={chatIcon} href="chat-icon" />
+          <img src={chatIcon} alt="chat-icon" />
           <div className="login-form__header">
             <p>Login ke akunmu</p>
             <p>Masuk akun untuk menggunakan PituChat</p>

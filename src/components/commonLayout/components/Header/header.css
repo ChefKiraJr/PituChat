@@ -1,0 +1,25 @@
+.header__container {
+  width: 100%;
+  padding: 16px 0;
+  padding-left: 22px;
+  padding-right: 32px;
+  height: 72px;
+  background: #ffffff;
+  border-bottom: 1px solid #ebebeb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

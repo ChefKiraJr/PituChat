@@ -1,0 +1,67 @@
+.sidebar__container {
+  width: 115px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  border-right: 1px solid #ebebeb;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 72px;
+}
+
+.sidebar-menu__option {
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.sidebar-menu__active {
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background: #e6f5fc;
+  border-left: 3px solid #0c4ac0;
+}
+
+.sidebar-menu__active p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0c4ac0;
+}
+
+.sidebar-menu__option p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0c4ac0;
+}
+
+.sidebar__logout {
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.sidebar__logout p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0c4ac0;
+}
