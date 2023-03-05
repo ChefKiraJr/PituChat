@@ -7,7 +7,7 @@ const CommonLayout = (props) => {
     <>
       <Header />
       {props.children}
-      <Sidebar />
+      <Sidebar page={props.page} />
     </>
   );
 };

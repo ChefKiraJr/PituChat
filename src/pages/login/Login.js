@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './loginPage.css';
+import './login.css';
 import loginImage from '../../assets/images/loginImage.png';
 import chatIcon from '../../assets/images/chatIcon.png';
 import {
@@ -12,7 +12,7 @@ import {
 import { EmailIcon, PasswordIcon, ShowIcon } from './Dummy';
 import { useNavigate } from 'react-router-dom';
 
-const LoginPage = () => {
+const Login = () => {
   const [isShownPassword, setIsShownPassword] = useState(false);
   const navigate = useNavigate();
   return (
@@ -67,7 +67,7 @@ const LoginPage = () => {
               borderRadius="8px"
               color="#FAFAFA"
               padding="12px 0"
-              onClick={() => navigate('/homePage')}
+              onClick={() => navigate('/chat')}
             >
               Masuk
             </Button>
@@ -78,4 +78,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;

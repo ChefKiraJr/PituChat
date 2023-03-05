@@ -1,0 +1,69 @@
+.shop__container {
+  width: 100%;
+  height: 100vh;
+  background: #f9f9fa;
+  padding-top: 72px;
+  padding-left: 115px;
+}
+
+.shop__content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 22px 32px;
+}
+
+.shop__content p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #1a1a1a;
+}
+
+.shop__list {
+  display: flex;
+  gap: 24px;
+}
+
+.shop-list__container {
+  width: 190px;
+  height: 204px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.shop-list__name {
+  width: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  background: #d9f2e3;
+  border-radius: 4px;
+}
+
+.shop-list__name p {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.015em;
+  color: #1a1a1a;
+}
+
+.shop-list__add {
+  width: 190px;
+  height: 204px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 0 24px;
+}

@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './sidebar.css';
 import { ChatIcon, ShopIcon, LogoutIcon } from './Dummy';
 import { useNavigate } from 'react-router-dom';
 
-const Sidebar = () => {
-  const [page, setPage] = useState('chat');
+const Sidebar = ({ page }) => {
   const navigate = useNavigate();
   return (
     <div className="sidebar__container">
@@ -13,7 +12,7 @@ const Sidebar = () => {
           className={
             page === 'chat' ? 'sidebar-menu__active' : 'sidebar-menu__option'
           }
-          onClick={() => setPage('chat')}
+          onClick={() => navigate('/chat')}
         >
           <ChatIcon />
           <p>Chat</p>
@@ -22,7 +21,7 @@ const Sidebar = () => {
           className={
             page === 'shop' ? 'sidebar-menu__active' : 'sidebar-menu__option'
           }
-          onClick={() => setPage('shop')}
+          onClick={() => navigate('/shop')}
         >
           <ShopIcon />
           <p>Toko</p>

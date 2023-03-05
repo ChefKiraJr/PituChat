@@ -1,16 +1,18 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LoginPage from './pages/loginPage/LoginPage';
+import Login from './pages/login/Login';
 import { ChakraProvider } from '@chakra-ui/react';
-import HomePage from './pages/homePage/HomePage';
+import Chat from './pages/chat/Chat';
+import Shop from './pages/shop/Shop';
 
 function App() {
   return (
     <ChakraProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/homePage" element={<HomePage />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/shop" element={<Shop />} />
         </Routes>
       </BrowserRouter>
     </ChakraProvider>

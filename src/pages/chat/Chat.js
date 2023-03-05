@@ -1,12 +1,12 @@
 import React from 'react';
 import CommonLayout from '../../components/commonLayout/CommonLayout';
 
-const HomePage = () => {
+const Chat = () => {
   return (
-    <CommonLayout>
+    <CommonLayout page={'chat'}>
       <div>INI HOMEPAGE!</div>
     </CommonLayout>
   );
 };
 
-export default HomePage;
+export default Chat;
