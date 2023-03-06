@@ -11,11 +11,13 @@ import shopeeLogo from '../../assets/images/shopeeLogo.png';
 const Shop = () => {
   const data = [
     {
+      shopName: 'Beauty Lovers',
       image: tokpedImage,
       logo: tokpedLogo,
       color: '#D9F2E3',
     },
     {
+      shopName: 'Beauty Lovers',
       image: shopeeImage,
       logo: shopeeLogo,
       color: '#FFDFCC',
@@ -36,7 +38,7 @@ const Shop = () => {
                     style={{ background: `${value.color}` }}
                   >
                     <img src={value.logo} alt="logo" />
-                    <p>Beauty Lovers</p>
+                    <p>{value.shopName}</p>
                   </div>
                   <Button
                     isDisabled

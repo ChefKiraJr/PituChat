@@ -1,0 +1,235 @@
+.chat-list__container {
+  width: 359px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #ebebeb;
+  padding-top: 72px;
+  margin-left: 115px;
+}
+
+.chat-list__header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76px;
+  padding: 24px 16px;
+}
+
+.chat-list__header p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+
+.chat-list__menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.chat-menu__input {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 8px;
+  width: 160px;
+  height: 24px;
+  background: #f9f9fa;
+  border-radius: 8px;
+}
+
+.chat-menu__input p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  color: #808080;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.chat-filter__select {
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  width: 202px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1),
+    0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
+}
+
+.chat-filter__option {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 8px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.chat-filter__option p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  color: #1a1a1a;
+}
+
+.chat-filter__all {
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #0c4ac0;
+}
+
+.chat-list__option {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chat-option__active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  border-bottom: 3px solid #0c4ac0;
+  padding: 22px 0;
+}
+
+.chat-option__active p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #1a1a1a;
+}
+
+.chat-bubble__small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 5px;
+  height: 16px;
+  background: #0c4ac0;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.chat-bubble__large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 5px;
+  height: 20px;
+  background: #0c4ac0;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.chat-option__inactive {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 8px;
+  gap: 8px;
+  border-bottom: 3px solid #ebebeb;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #808080;
+  padding: 22px 0;
+}
+
+.chat-list__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-list__people {
+  display: flex;
+  padding: 24px 16px;
+  gap: 12px;
+  border-bottom: 1px solid #ebebeb;
+  cursor: pointer;
+}
+
+.chat-list__avatar {
+  width: 40px !important;
+  height: 40px;
+  background: grey;
+  border-radius: 100%;
+}
+
+.chat-list__name {
+  width: 218px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-list__name > p:nth-child(1) {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #1a1a1a;
+}
+
+.chat-list__name > p:nth-child(2) {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  color: #4d4d4d;
+}
+
+.chat-list__shop {
+  width: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  background: #d9f2e3;
+  border-radius: 4px;
+}
+
+.chat-list__shop {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.015em;
+  color: #1a1a1a;
+}
+
+.chat-list__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-list__info p {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.015em;
+  color: #4d4d4d;
+}
