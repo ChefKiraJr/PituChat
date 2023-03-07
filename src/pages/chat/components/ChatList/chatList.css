@@ -162,6 +162,8 @@
 .chat-list__content {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+  max-height: 70vh;
 }
 
 .chat-list__people {
@@ -173,10 +175,8 @@
 }
 
 .chat-list__avatar {
-  width: 40px !important;
+  width: 40px;
   height: 40px;
-  background: grey;
-  border-radius: 100%;
 }
 
 .chat-list__name {

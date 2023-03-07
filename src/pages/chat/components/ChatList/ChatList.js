@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import './chatList.css';
-import { SearchIcon, FilterIcon, Checkbox } from './Dummy';
+import React, { useState } from "react";
+import "./chatList.css";
+import { SearchIcon, FilterIcon, Checkbox } from "./Dummy";
 
 const ChatList = ({ data, handleClick }) => {
   const [searchStatus, setSearchStatus] = useState(false);
@@ -75,16 +75,18 @@ const ChatList = ({ data, handleClick }) => {
         <div className="chat-option__inactive">Semua chat</div>
       </div>
       <div className="chat-list__content">
-        {data.map((value) => {
+        {data.map((value, index) => {
           return (
             <div
               className="chat-list__people"
-              onClick={() => handleClick(value)}
+              onClick={() => handleClick(value, index)}
             >
-              <div className="chat-list__avatar"></div>
+              <div className="chat-list__avatar">
+                <img src={value.avatar} alt="avatar" />
+              </div>
               <div className="chat-list__name">
                 <p>{value.name}</p>
-                <p>{value.lastText}</p>
+                <p>{value?.textChat[0]?.textContent}</p>
                 <div className="chat-list__shop">
                   <img src={value.logo} alt="logo" />
                   <p>{value.shopName}</p>

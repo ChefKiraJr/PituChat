@@ -1,4 +1,5 @@
 body {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
+  overflow-y: hidden;
 }
