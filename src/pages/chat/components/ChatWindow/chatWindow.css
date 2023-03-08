@@ -30,6 +30,7 @@
 
 .chat-header__menu {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -100,6 +101,12 @@
 .chat-receiver__avatar {
   width: 32px;
   height: 32px;
+}
+
+.chat-receiver__avatar img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
 }
 
 .chat-receiver__content {
@@ -235,6 +242,11 @@
   width: 80px;
   height: 80px;
   margin-bottom: 38px;
+}
+
+.chat-info__avatar img {
+  width: 100%;
+  height: 100%;
 }
 
 .chat-info__name {

@@ -1,17 +1,16 @@
-import React, { useState } from "react";
-import "./login.css";
-import loginImage from "../../assets/images/loginImage.png";
-import chatIcon from "../../assets/images/chatIcon.png";
+import React, { useState } from 'react';
+import './login.css';
+import loginImage from '../../assets/images/loginImage.png';
+import chatIcon from '../../assets/images/chatIcon.png';
 import {
   Input,
   Button,
   InputGroup,
   InputLeftElement,
   InputRightElement,
-} from "@chakra-ui/react";
-import { ViewIcon } from "@chakra-ui/icons";
-import { EmailIcon, PasswordIcon, ShowIcon } from "./Dummy";
-import { useNavigate } from "react-router-dom";
+} from '@chakra-ui/react';
+import { ViewIcon, ViewOffIcon, EmailIcon, LockIcon } from '@chakra-ui/icons';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [isShownPassword, setIsShownPassword] = useState(false);
@@ -32,7 +31,9 @@ const Login = () => {
             <div className="login-form__input">
               <p>Email</p>
               <InputGroup>
-                <InputLeftElement children={<EmailIcon />} />
+                <InputLeftElement
+                  children={<EmailIcon fontSize="20px" color="#4D4D4D" />}
+                />
                 <Input
                   placeholder="Email"
                   type="text"
@@ -46,10 +47,12 @@ const Login = () => {
             <div className="login-form__input">
               <p>Password</p>
               <InputGroup>
-                <InputLeftElement children={<PasswordIcon />} />
+                <InputLeftElement
+                  children={<LockIcon fontSize="20px" color="#4D4D4D" />}
+                />
                 <Input
                   placeholder="Password"
-                  type={isShownPassword ? "text" : "password"}
+                  type={isShownPassword ? 'text' : 'password'}
                   padding="8px 44px"
                   border="1px solid #CCCCCC"
                   border-radius="8px"
@@ -59,9 +62,9 @@ const Login = () => {
                   className="show-icon"
                   children={
                     isShownPassword ? (
-                      <ViewIcon w="20px" h="20px" color="#4D4D4D" />
+                      <ViewIcon fontSize="20px" color="#4D4D4D" />
                     ) : (
-                      <ShowIcon />
+                      <ViewOffIcon fontSize="20px" color="#4D4D4D" />
                     )
                   }
                   onClick={() => setIsShownPassword(!isShownPassword)}
@@ -75,7 +78,7 @@ const Login = () => {
               borderRadius="8px"
               color="#FAFAFA"
               padding="12px 0"
-              onClick={() => navigate("/chat")}
+              onClick={() => navigate('/chat')}
             >
               Masuk
             </Button>

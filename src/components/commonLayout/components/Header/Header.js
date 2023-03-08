@@ -2,7 +2,7 @@ import React from 'react';
 import './header.css';
 import appLogo from '../../../../assets/images/appLogo.png';
 import userAvatar from '../../../../assets/images/userAvatar.png';
-import { ArrowDownIcon } from './Dummy';
+import { ChevronDownIcon } from '@chakra-ui/icons';
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
         <img src={appLogo} alt="app-logo" />
         <div className="header__user">
           <img src={userAvatar} alt="user-avatar" />
-          <ArrowDownIcon />
+          <ChevronDownIcon fontSize="20px" color="#4d4d4d" />
         </div>
       </div>
     </div>

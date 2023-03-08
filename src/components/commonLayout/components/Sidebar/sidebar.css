@@ -1,7 +1,7 @@
 .sidebar__container {
   width: 115px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   background: #ffffff;
@@ -39,6 +39,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: 0.1px;
   color: #0c4ac0;
 }
 
@@ -46,6 +47,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: 0.1px;
   color: #0c4ac0;
 }
 
@@ -63,5 +65,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: 0.1px;
   color: #0c4ac0;
 }

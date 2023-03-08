@@ -1,6 +1,6 @@
-import { Input } from "@chakra-ui/react";
-import React, { useState } from "react";
-import "./chatWindow.css";
+import { Input } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import './chatWindow.css';
 import {
   SearchIcon,
   InfoIcon,
@@ -8,7 +8,7 @@ import {
   EmptyMessageImage,
   Ellipse,
   CloseButton,
-} from "./Dummy";
+} from './Dummy';
 
 const ChatWindow = ({
   selectedChat,
@@ -17,7 +17,6 @@ const ChatWindow = ({
   handleSubmit,
 }) => {
   const [isShownInfo, setIsShownInfo] = useState(false);
-  console.log(selectedChat);
   return (
     <div className="container-asli">
       {selectedChat ? (
@@ -36,12 +35,12 @@ const ChatWindow = ({
               return (
                 <div
                   className={
-                    value.status === "sender"
-                      ? "chat-content__sender"
-                      : "chat-content__receiver"
+                    value.status === 'sender'
+                      ? 'chat-content__sender'
+                      : 'chat-content__receiver'
                   }
                 >
-                  {value.status === "sender" ? (
+                  {value.status === 'sender' ? (
                     <div className="chat-sender__main">
                       <div className="chat-sender__text">
                         <p>{value.textContent}</p>
@@ -76,6 +75,7 @@ const ChatWindow = ({
               padding="10px 12px"
               border="1px solid #000000"
               borderRadius="20px"
+              focusBorderColor="#0C4AC0"
               onChange={(event) => handleChange(event)}
               onKeyDown={(event) => handleSubmit(event)}
             />
@@ -107,12 +107,7 @@ const ChatWindow = ({
           </div>
           <div className="chat-info__content">
             <div className="chat-info__avatar">
-              <img
-                src={selectedChat.avatar}
-                alt="avatar"
-                width="80px"
-                height="80px"
-              />
+              <img src={selectedChat.avatar} alt="avatar" />
             </div>
             <div className="chat-info__name">
               <p>{selectedChat.name}</p>

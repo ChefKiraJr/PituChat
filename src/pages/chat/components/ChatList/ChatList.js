@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./chatList.css";
-import { SearchIcon, FilterIcon, Checkbox } from "./Dummy";
+import React, { useState } from 'react';
+import './chatList.css';
+import { SearchIcon, FilterIcon, Checkbox } from './Dummy';
 
 const ChatList = ({ data, handleClick }) => {
   const [searchStatus, setSearchStatus] = useState(false);
@@ -69,10 +69,16 @@ const ChatList = ({ data, handleClick }) => {
       <div className="chat-list__option">
         <div className="chat-option__active">
           <p>Perlu Balas</p>
-          <div className="chat-bubble__small">{data.length}</div>
+          <div className="chat-bubble__small">
+            <p>{data.length}</p>
+          </div>
         </div>
-        <div className="chat-option__inactive">Terbalas</div>
-        <div className="chat-option__inactive">Semua chat</div>
+        <div className="chat-option__inactive">
+          <p>Terbalas</p>
+        </div>
+        <div className="chat-option__inactive">
+          <p>Semua chat</p>
+        </div>
       </div>
       <div className="chat-list__content">
         {data.map((value, index) => {
@@ -94,7 +100,9 @@ const ChatList = ({ data, handleClick }) => {
               </div>
               <div className="chat-list__info">
                 <p>Today</p>
-                <div className="chat-bubble__large">{value.unReadMessage}</div>
+                <div className="chat-bubble__large">
+                  <p>{value.unReadMessage}</p>
+                </div>
               </div>
             </div>
           );
