@@ -157,12 +157,15 @@
   padding: 12px 8px;
   gap: 8px;
   border-bottom: 3px solid #ebebeb;
+  padding: 22px 0;
+}
+
+.chat-option__inactive p {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.1px;
   color: #808080;
-  padding: 22px 0;
 }
 
 .chat-list__content {
