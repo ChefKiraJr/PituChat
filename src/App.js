@@ -8,7 +8,7 @@ import Shop from './pages/shop/Shop';
 function App() {
   return (
     <ChakraProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/app1">
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/chat" element={<Chat />} />
